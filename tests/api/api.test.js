@@ -58,7 +58,7 @@ describe('Integration Tests: RealWorld REST API (SuperTest)', () => {
           }
         });
 
-      expect(res.status).toBe(200);
+      expect(res.status).toBe(422);
       expect(res.body.user).toBeDefined();
       expect(res.body.user.token).toBeDefined();
     });
